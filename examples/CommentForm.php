@@ -21,12 +21,6 @@
             $text   = new TextField("First name");
             $text->setHelpText('Put your first name in here.');
 
-            $grp = new GroupField('Andric Group');
-            $grp->addField(new TextField('test 1'));
-            $grp->addField(new TextField('test 2'));
-
-            $this->addGroup($grp);
-
             $hidden = new HiddenField('hidden field');
             $hidden->setValue('value');
 
