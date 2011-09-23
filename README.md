@@ -10,8 +10,9 @@ and has an example.
 Check the example.  Pretty self explanatory
 
 ##Wishlist
-* Fix all constructors to take label then validators
+* Fix all constructors to take just the label
+** Interior of the constructor I want it to use a private init function instead of the parent constructor.
 * Allow form to take multiple form items with the same label and add _(n) to the form id
 * AJAX-y-ness
 * Wizard capabilities
-* Templating
+* Better templating
