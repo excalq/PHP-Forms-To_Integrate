@@ -1,0 +1,11 @@
+Forms TODO
+[ ] Rename functions
+------------------------------------------------------------------------------------------------------------------------------
+
+Things wanted:
+[ ] Save fields to a tree (for grouping purposes)
+[ ] Use callback functions for buttons (cancel, reset etc)
+[ ] Set control theme (set theme for certain fields to override)
+[ ] Set form theme
+[ ] Set group theme
+[ ]
