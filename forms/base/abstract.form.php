@@ -15,7 +15,6 @@
 		protected $bound		= false;		// True when the form has user-submitted data.
 		protected $valid		= false;		// Memoized return value of the initial doValidateField call.
 		protected $fields		= array();		// protected field storage.
-		protected $groups		= array();		// protected field storage.
 		protected $errors		= array();		// protected storage to collect error messages. Stored as $field_name => $msg.
 		protected $clean;						// protected storage for cleaned field values.
 		protected $theme;						// Set the theming function for this thingy
@@ -164,15 +163,6 @@
 		}
 
 		/**
-		 * Add a control to the form
-		 * @param FormField $control
-		 * @author Andric Villanueva
-		 */
-		public function addGroup(FormControlGroup $group) {
-			$this->groups[$group->getMachineName()] = $group;
-		}
-
-		/**
 		 * Internal method used by the constructor to find all of the fields in the
 		 * class after the child's 'init' is called. Returns an array of
 		 * the field instances.
@@ -196,7 +186,6 @@
 
 		/**
 		 * Sets the value of each field from the proper superglobal data array.
-		 * Does not currently work with groups (as that doesn't exist yet)
 		 * @return null
 		 * @author Andric Villanueva
 		 **/
@@ -283,11 +272,6 @@
 						$intValid++;
 					}
 				}
-
-				// Go through the groups now
-				/*foreach ($this->groups as $grp) {
-					var_dump($grp);
-				} //*/
 			}
 
 			// Determine if the form is valid by how many
@@ -419,14 +403,6 @@
 		 */
 		public function getFields() {
 			return $this->fields;
-		}
-
-		/**
-		 * For use to render the fields manually
-		 * @return array FormField objects
-		 */
-		public function getGroups() {
-			return $this->groups;
 		}
 
 		/**

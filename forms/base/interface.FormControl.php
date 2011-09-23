@@ -2,7 +2,6 @@
 
 	interface FormControl {
 		const SINGLE	= 0;
-		const GROUP		= 1;
 
 		/**
 		 * Assigns help text to the field.
@@ -100,11 +99,4 @@
 		 * @return string The machine name for this object based on the label
 		 */
 		public function getMachineName();
-
-		/**
-		 * Get the type of form that this is.
-		 * @author Andric Villanueva
-		 * @return int Group name
-		 */
-		public function getFieldType();
 	}

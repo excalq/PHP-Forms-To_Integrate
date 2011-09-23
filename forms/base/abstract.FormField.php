@@ -243,15 +243,6 @@
         }
 
         /**
-         * Get the type of form that this is.
-         * @author Andric Villanueva
-         * @return int Group name
-         */
-        public function getFieldType() {
-            return FormControl::SINGLE;
-        }
-
-        /**
          * Get the label for this form field
          * @return string
          */

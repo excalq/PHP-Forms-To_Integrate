@@ -55,6 +55,5 @@
             else {
                 echo '<p><em>The form has yet to be submitted.</em></p>';
             }
-
         }
     }

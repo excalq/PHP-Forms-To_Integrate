@@ -11,7 +11,6 @@
 
 	// Include the base classes/files
 	require_once 'interface.FormControl.php';
-	require_once 'interface.FormControlGroup.php';
 	require_once 'interface.validators.php';
 	require_once 'interface.Form.php';
 	
@@ -21,7 +20,6 @@
 	require_once 'abstract.validation.php';
 
 	// Include all the fields
-	require_once 'GroupField.php';
 	require_once 'TextField.php';
 	require_once 'BooleanField.php';
 	require_once 'DateTimeField.php';
