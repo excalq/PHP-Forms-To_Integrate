@@ -16,3 +16,7 @@ Check the example.  Pretty self explanatory
 * AJAX-y-ness
 * Wizard capabilities
 * Better templating
+* Rename functions
+* Register callback functions for buttons (cancel, reset etc), validations and extra submit handlers
+* Set control theme (set theme for certain fields to override)
+* Set form theme so that the developer can use their own theme instead.

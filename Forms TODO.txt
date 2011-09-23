@@ -1,8 +1,0 @@
-Forms TODO
-[ ] Rename functions
-------------------------------------------------------------------------------------------------------------------------------
-
-Things wanted:
-[ ] Use callback functions for buttons (cancel, reset etc)
-[ ] Set control theme (set theme for certain fields to override)
-[ ] Set form theme
